@@ -1,1 +1,1 @@
-# blubberflub.github.io
+My personal website/portfolio. Intro to my projects, background, and contact information.
