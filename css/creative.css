@@ -120,7 +120,7 @@ aside {
         background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
-      background-color: transparent;
+      background-color: white;
       border-color: rgba(255, 255, 255, 0.3); }
       #mainNav .navbar-brand {
         color: white;
