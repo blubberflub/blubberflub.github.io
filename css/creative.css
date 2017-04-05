@@ -92,7 +92,7 @@ aside {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   #mainNav .navbar-brand {
-    color: white;
+    color: #222222;
     letter-spacing: 3px;
     font-family: 'Lato-Light', sans-serif;
     font-weight: 500; }
@@ -120,7 +120,7 @@ aside {
         background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
-      background-color: white;
+      background-color: transparent;
       border-color: rgba(255, 255, 255, 0.3); }
       #mainNav .navbar-brand {
         color: white;
