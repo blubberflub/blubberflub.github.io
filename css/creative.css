@@ -129,11 +129,11 @@ aside {
           color: white; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: white; 
+        color: white;
         border: 1px solid transparent;}
         #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: white; 
+          color: white;
           border-bottom: 1px solid #ffffff;}
       #mainNav.navbar-shrink {
         background-color: white;
@@ -152,6 +152,7 @@ aside {
 
 header {
   position: relative;
+  height: 100%;
   width: 100%;
   min-height: auto;
   -webkit-background-size: cover;
@@ -182,7 +183,6 @@ header {
       margin-bottom: 50px; }
   @media (min-width: 768px) {
     header {
-      height: 100%;
       min-height: 600px; }
       header .header-content {
         position: absolute;
@@ -225,7 +225,7 @@ header {
   margin: 50px auto 0; }
   @media (min-width: 992px) {
     .test {
-      margin: 0px auto 0; } 
+      margin: 0px auto 0; }
 }
 
 #contact {
