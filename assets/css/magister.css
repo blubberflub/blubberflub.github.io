@@ -93,6 +93,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	margin-bottom:25px;
 }
 
+.em {
+	cursor: pointer;
+}
+
 /********************************************************/
 /*                   UI - Buttons                       */
 /********************************************************/
@@ -130,6 +134,9 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 		top: -30px;
 		left: -30px;
 }
+
+
+
 
 /***********************************************************/
 /*                   Inverted theme                        */
