@@ -40,8 +40,9 @@ body {
 /********************************************************/
 /*             Sections - universal classes             */
 /********************************************************/
-.section {
-	height:100%;
+
+.container-fluid{
+  height:100%;
   display:table;
   width: 100%;
   padding: 0;
@@ -53,11 +54,10 @@ body {
 	vertical-align: middle;
 }
 
-.text-center {
+.centering {
   float:none;
   margin:0 auto;
 }
-
 /********************************************************/
 /*                      Typography                      */
 /********************************************************/
