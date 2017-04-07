@@ -46,6 +46,11 @@ body {
   align-items: center;
 }
 
+.img-circle:hover {
+   -webkit-filter: brightness(70%);
+   filter: brightness(70%);
+}
+
 /********************************************************/
 /*                      Typography                      */
 /********************************************************/
