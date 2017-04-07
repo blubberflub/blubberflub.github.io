@@ -39,18 +39,14 @@ body {
 /*             Sections - universal classes             */
 /********************************************************/
 .section {
-	z-index: 1;
-	min-height:420px;
-	width: 100%;
-	overflow:auto;
-	height:100%;
-	padding-top:100px;
-	padding-bottom:50px;
-	display:none;
-	top:0;
-}
-@media (min-width: 768px) {
-	.section { padding-top:350px;}
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
 }
 
 /* Show one of sections */
