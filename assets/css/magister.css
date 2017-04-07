@@ -77,13 +77,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	line-height:1em;
 }
 
-@media (min-width: 992px) {
-    /* For mobile phones: */
-    .title{
-        font-size: 5em;
-    }
-}
-
 .subtitle {
 	font-family: 'Lato-Light', sans-serif;
 	line-height:.9em;
