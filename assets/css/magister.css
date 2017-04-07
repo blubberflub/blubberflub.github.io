@@ -71,15 +71,11 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
   letter-spacing: 3px;
 	text-transform: uppercase;
 	font-weight:normal;
-	font-size:4em;
+	font-size:5em;
 	margin-bottom:15px;
 	color:#FDF9F4;
 	line-height:1em;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 780a79d... media and link fix
 .subtitle {
 	font-family: 'Lato-Light', sans-serif;
 	line-height:.9em;
