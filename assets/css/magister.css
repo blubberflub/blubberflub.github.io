@@ -38,12 +38,17 @@ body {
 /********************************************************/
 /*             Sections - universal classes             */
 /********************************************************/
+.section {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 
-/* Show one of sections */
-#head {
-	display: block;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
 }
-
 
 /********************************************************/
 /*                      Typography                      */
