@@ -24,9 +24,6 @@ html {
 
 body {
 	background:transparent;
-	height: 100%;
-	margin: 0;
-	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.5em;
@@ -42,21 +39,13 @@ body {
 /********************************************************/
 
 .container-fluid{
-  height:100%;
-  display:table;
-  width: 100%;
-  padding: 0;
-}
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+	min-width: 100%;
+	min-width: 100vh;
 
-.row-fluid {
-	height: 100%;
-	display:table-cell;
-	vertical-align: middle;
-}
-
-.centering {
-  float:none;
-  margin:0 auto;
+  display: flex;
+  align-items: center;
 }
 /********************************************************/
 /*                      Typography                      */
