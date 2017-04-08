@@ -46,6 +46,11 @@ body {
   align-items: center;
 }
 
+.img-circle {
+	height: 108px;
+	weight: 98px;
+}
+
 .img-circle:hover {
    -webkit-filter: brightness(70%);
    filter: brightness(70%);
