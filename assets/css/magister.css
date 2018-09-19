@@ -1,162 +1,174 @@
 html {
-	background: linear-gradient(
-	rgba(0, 0, 0, 0.7),
-	rgba(0, 0, 0, 0.7)),
-	url(../images/bg.jpg)
-	no-repeat center;
-	min-height:100%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg) no-repeat center;
+     min-height:100%;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
-
 /**fonts**/
-
-@font-face{
-    font-family: "Lato-Light";
-    src: url('../fonts/Lato-Light.ttf');
+ @font-face{
+     font-family: "Lato-Light";
+     src: url('../fonts/Lato-Light.ttf');
 }
-
-@font-face{
-    font-family: "Lato-Thin";
-		src: url('../fonts/lato-thin-webfont.woff2');
+ @font-face {
+     font-family: "Lato-Thin";
+     src: url('../fonts/lato-thin-webfont.woff2');
 }
-
-body {
-	background:transparent;
-	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
-	line-height: 1.5em;
-	font-size:14px;
-	font-family: "Lato-Light", Arial, sans-serif;
-	color:#fff;
-	color:rgba(255,255,255,.8);
-	font-weight: normal;
+ @font-face {
+     font-family: 'fontello';
+     src: url('../fonts/fontello.woff2');
 }
-
-/********************************************************/
-/*             Sections - universal classes             */
-/********************************************************/
-
-.section {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
+ body {
+     background:transparent;
+     -webkit-font-smoothing: antialiased;
+     -webkit-overflow-scrolling: touch;
+     line-height: 1.5em;
+     font-size:14px;
+     font-family: "Lato-Light", Arial, sans-serif;
+     color:#fff;
+     color:rgba(255,255,255,.8);
+     font-weight: normal;
 }
-
-.img-circle {
-	height: 108px;
-	weight: 98px;
-}
-
-.img-circle:hover {
-   -webkit-filter: brightness(70%);
-   filter: brightness(70%);
-}
-
-/********************************************************/
-/*                      Typography                      */
-/********************************************************/
-a { color:#fff; text-decoration: none; }
-a:hover, a:active { color:#fff; text-decoration: underline; }
-
-.title,
-.subtitle {
-	font-family: 'Lato-Thin', sans-serif;
-  letter-spacing: 2px;
-	text-transform: uppercase;
-	font-weight:normal;
-	font-size:5em;
-	margin-bottom:15px;
-	color:#FDF9F4;
-	line-height:1em;
-}
-.subtitle {
-	font-family: 'Lato-Light', sans-serif;
-	line-height:.9em;
-	text-transform: none;
-	letter-spacing: 2px;
-	font-size:1em;
-	margin-top:0;
-	margin-bottom:40px;
-}
-.tagline {
-	font-size:1.4em;
-	color: #FFFFFF;
-	line-height:1.3em;
-	font-weight:normal;
-	margin-bottom:25px;
-}
-
-.em {
-	cursor: pointer;
-}
-
-/********************************************************/
-/*                   UI - Buttons                       */
-/********************************************************/
-.btn{
-	display: inline-block;
-	width: 130px;
-	height: 40px;
-	line-height: 20px;
-	font-size: 18px;
-	position: relative;
-	overflow: hidden;
-	border: 2px solid #93c572;
-	transition: color .5s;
-}
-.btn:before{
-	content: "";
-	position: absolute;
-	z-index: -1;
-	background: #93c572;
-	height: 150px;
-	width: 200px;
-	border-radius: 50%;
-}
-.btn:hover {
-	color: #fff;
-}
-
-.btn:before {
-		top: 0;
-		left: -200%;
-		transition: all .7s;
-}
-
-.btn:hover:before {
-		top: -30px;
-		left: -30px;
-}
-
-
-
-
 /***********************************************************/
-/*                   Inverted theme                        */
+/* fontello */
 /***********************************************************/
-.theme {
-	color:#FFFFFF;
- }
-.theme .fb:hover, .fb:focus {
-	color: #3b5998;
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+     font-family: "fontello";
+     font-style:normal;
+     font-weight:normal;
+     line-height:1;
+     -webkit-font-smoothing:antialiased;
+     -moz-osx-font-smoothing:grayscale
 }
-.theme .li:hover, .li:focus {
-	color: #007bb6;
+ .icon-mail:before {
+     content: '\e800';
 }
-.theme .gh:hover, .gh:focus {
-	color: #6e5494;
+/* '' */
+ .icon-github-circled:before {
+     content: '\f09b';
 }
-.theme .em:hover, .em:focus {
-	color: #ea4335;
+/* '' */
+ .icon-facebook-squared:before {
+     content: '\f308';
 }
-
-.theme .title,
-.theme .subtitle,
-.theme .tagline {
-	color:#FFFFFF;
+/* '' */
+ .icon-linkedin-squared:before {
+     content: '\f30c';
+}
+/* '' */
+/********************************************************/
+/* Sections - universal classes */
+/********************************************************/
+ .section {
+     min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+     min-height: 100vh;
+    /* These two lines are counted as one :-) */
+     display: flex;
+     align-items: center;
+}
+ .img-circle {
+     height: 108px;
+     weight: 98px;
+}
+ .img-circle:hover {
+     -webkit-filter: brightness(70%);
+     filter: brightness(70%);
+}
+/********************************************************/
+/* Typography */
+/********************************************************/
+ a {
+     color:#fff;
+     text-decoration: none;
+}
+ a:hover, a:active {
+     color:#fff;
+     text-decoration: underline;
+}
+ .title, .subtitle {
+     font-family: 'Lato-Thin', sans-serif;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     font-weight:normal;
+     font-size:5em;
+     margin-bottom:15px;
+     color:#FDF9F4;
+     line-height:1em;
+}
+ .subtitle {
+     font-family: 'Lato-Light', sans-serif;
+     line-height:.9em;
+     text-transform: none;
+     letter-spacing: 2px;
+     font-size:1em;
+     margin-top:0;
+     margin-bottom:40px;
+}
+ .tagline {
+     font-size:1.4em;
+     color: #FFFFFF;
+     line-height:1.3em;
+     font-weight:normal;
+     margin-bottom:25px;
+}
+ .em {
+     cursor: pointer;
+}
+/********************************************************/
+/* UI - Buttons */
+/********************************************************/
+ .btn{
+     display: inline-block;
+     width: 130px;
+     height: 40px;
+     line-height: 20px;
+     font-size: 18px;
+     position: relative;
+     overflow: hidden;
+     border: 2px solid #93c572;
+     transition: color .5s;
+}
+ .btn:before{
+     content: "";
+     position: absolute;
+     z-index: -1;
+     background: #93c572;
+     height: 150px;
+     width: 200px;
+     border-radius: 50%;
+}
+ .btn:hover {
+     color: #fff;
+}
+ .btn:before {
+     top: 0;
+     left: -200%;
+     transition: all .7s;
+}
+ .btn:hover:before {
+     top: -30px;
+     left: -30px;
+}
+/***********************************************************/
+/* Inverted theme */
+/***********************************************************/
+ .theme {
+     color:#FFFFFF;
+}
+ .theme .fb:hover, .fb:focus {
+     color: #3b5998;
+}
+ .theme .li:hover, .li:focus {
+     color: #007bb6;
+}
+ .theme .gh:hover, .gh:focus {
+     color: #6e5494;
+}
+ .theme .em:hover, .em:focus {
+     color: #ea4335;
+}
+ .theme .title, .theme .subtitle, .theme .tagline {
+     color:#FFFFFF;
 }
