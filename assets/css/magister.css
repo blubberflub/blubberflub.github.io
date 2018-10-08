@@ -73,7 +73,6 @@ html {
 }
  a:hover, a:active {
      color:#fff;
-     text-decoration: underline;
 }
  .title, .subtitle {
      font-family: 'Lato-Thin', sans-serif;
